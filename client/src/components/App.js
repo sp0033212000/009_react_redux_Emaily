@@ -6,23 +6,24 @@ import history from "../history";
 
 import Header from "./Header";
 import Landing from "./Landing";
-
-const Surveys = () => <div>Survey</div>;
+import Dsahboard from "./Dsahboard";
+import SurveyNew from "./surveys/SurveyNew";
 
 const App = ({ getUser }) => {
 	useEffect(() => {
 		getUser();
 	}, [getUser]);
 	return (
-		<div className="container">
-			<Router history={history}>
+		<Router history={history}>
+			<div className="container">
 				<Header />
 				<Switch>
 					<Route exact path="/" component={Landing} />
-					<Route path="/surveys" component={Surveys} />
+					<Route exact path="/surveys" component={Dsahboard} />
+					<Route path="/surveys/new" component={SurveyNew} />
 				</Switch>
-			</Router>
-		</div>
+			</div>
+		</Router>
 	);
 };
 

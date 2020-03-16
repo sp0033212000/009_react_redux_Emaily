@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
+import { reducer as fromReducer } from "redux-form";
 import authReducer from "./authReducer";
 import surveysReducer from "./surveysReducer";
 import actionTypes from "../types/action.types";
 
 const allReducers = combineReducers({
 	auth: authReducer,
+	form: fromReducer,
 	surveys: surveysReducer
 });
 
