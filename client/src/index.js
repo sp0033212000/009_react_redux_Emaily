@@ -12,6 +12,9 @@ import reducers from "./reducers/index";
 import axios from "axios";
 window.axios = axios;
 
+const test = JSON.parse(JSON.stringify(process.env));
+console.log(test);
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
 	reducers,
