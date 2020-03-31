@@ -1,6 +1,6 @@
 # 009_react_redux_Emaily
 
-Implement sending email service to helping customer send email to end user.
+This project can provide you that the end users will received your survey email.
 
 - Demo: https://intense-gorge-05646.herokuapp.com/
 
